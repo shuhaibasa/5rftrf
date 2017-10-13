@@ -1,0 +1,26 @@
+/*
+NAME    :fajas ahmed
+CLASS   :S7
+ROLL NO :09
+AIM     :Program to familiarise signal(SIGINT,SIG_IGN).
+*/
+
+//PROGRAM:
+
+#include<stdio.h>
+#include<signal.h>
+main()
+{
+printf("Program to familiarise signals\n");
+printf("signal SIG_IGN\n");
+printf("ctrl c disable\n");
+signal(SIGINT,SIG_IGN);
+for(;;);
+}
+
+/*OUTPUT:
+
+Program to familiarise signals
+signal SIG_IGN
+ctrl c disable
+^C^C*/
