@@ -1,0 +1,30 @@
+/*
+NAME    :fajas ahmed
+CLASS   :S7
+ROLL NO :09
+AIM     :Program to familiarise signal(SIGINT,<name>).
+*/
+
+//PROGRAM:
+
+#include<stdio.h>
+#include<signal.h>
+void c()
+{
+printf("Inside the function\n");
+}
+main()
+{
+printf("Program to familiarise signals\n");
+printf("signal SIGINT\n");
+printf("ctrl c enabled\n");
+signal(SIGINT,c);
+for(;;);
+}
+
+/*OUTPUT:
+
+Program to familiarise signals
+signal SIGINT
+ctrl c enabled
+^CInside the function*/
